@@ -38,13 +38,21 @@
       - [Ejemplo (Funciones Flecha)](#ejemploFuncionesFlecha)
 - [Ejemplo de lo aprendido](#ejemploDeLoAprendido)
 
+<div id='javascript'></div>
+
 # Javascript
 
+<div id='conceptosBasicos'></div>
+
 ## Conceptos Básicos
+
+<div id='Bloque'></div>
 
 ### Bloque
 
 Una sentencia block se utiliza para agrupar cero o más sentencias. Este grupo block se delimita por un par de llaves.
+
+<div id='ejemploBloque'></div>
 
 #### Ejemplo (Bloque)
 
@@ -55,6 +63,8 @@ Una sentencia block se utiliza para agrupar cero o más sentencias. Este grupo b
   sentencia_n;
 }
 ```
+
+<div id='declaraciondeVariables'></div>
 
 ### Declaración de variables
 
@@ -104,6 +114,8 @@ JavaScript tiene tres tipos de declaraciones de variables.
   }
   ```
 
+<div id='tiposDeDatos'></div>
+
 ### Tipos de datos
 
 1. **Boolean**: true y false
@@ -113,6 +125,8 @@ JavaScript tiene tres tipos de declaraciones de variables.
 5. **BigInt**: Un número entero con precisión arbitraria. Por ejemplo: 9007199254740992n.
 6. **String**: Una secuencia de caracteres que representan un valor de texto. Por ejemplo: "Hola"
 7. **Symbol**: (nuevo en ECMAScript 2015). Un tipo de dato cuyas instancias son únicas e inmutables
+
+<div id='ejemploTiposdeDatos'></div>
 
 #### Ejemplo (Tipos de datos)
 
@@ -143,11 +157,17 @@ texto en donde puedes
 agregar saltos de líneas y puedes concatenar así : ${texto_concatenado}`;
 ```
 
+<div id='bucles'></div>
+
 ## Bucles
+
+<div id='while'></div>
 
 ### while
 
 Crea un bucle que ejecuta una sentencia especificada mientras cierta condición se evalúe como verdadera. Dicha condición es evaluada antes de ejecutar la sentencia
+
+<div id='sintaxisWhile'></div>
 
 #### Sintaxis while
 
@@ -163,6 +183,8 @@ while (condicion)
 - **sentencia**
 
     Una sentecia que se ejecuta mientras la condición se evalúa como verdadera. Para ejecutar múltiples sentencias dentro de un bucle, utiliza una sentencia [bloqueb(#Bloque) para agrupar esas sentencias.
+
+<div id='ejemploWhile'></div>
 
 #### Ejemplo (while)
 
@@ -182,9 +204,13 @@ Valor de n : 3 Valor de x :6
 */
 ```
 
+<div id='doWhile'></div>
+
 ### do...while
 
 La sentencia (hacer mientras) crea un bucle que ejecuta una sentencia especificada, hasta que la condición de comprobación se evalúa como falsa. La condición se evalúa después de ejecutar la sentencia, dando como resultado que la sentencia especificada se ejecute al menos una vez.
+
+<div id='sintaxisDoWhile'></div>
 
 #### Sintaxis do...while
 
@@ -201,6 +227,8 @@ while (condición);
 - **consdición**
 
     Una expresión se evalúa después de cada pase del bucle. Si condición se evalúa como verdadera, la sentencia se re-ejecuta. Cuando condición se evalúa como falsa, el control pasa a la siguiente sentencia hacer mientras.
+
+<div id='ejemploDoWhile'></div>
 
 #### Ejemplo (do...while)
 
@@ -220,9 +248,13 @@ Valor de i: 5
 */
 ```
 
+<div id='for'></div>
+
 ### for
 
 Crea un bucle que consiste en tres expresiones opcionales, encerradas en paréntesis y separadas por puntos y comas, seguidas de una sentencia ejecutada en un bucle.
+
+<div id='sintaxisFor'></div>
 
 #### Sintaxis for
 
@@ -246,6 +278,8 @@ for ([expresion-inicial]; [condicion]; [expresion-final])sentencia
 
     Una sentencia que se ejecuta mientras la condición se evalúa como verdadera. Para ejecutar múltiples sentencias dentro del bucle, utilice una sentencia [bloqueb(#Bloque) para agrupar aquellas sentecias.
 
+<div id='ejemploFor'></div>
+
 #### Ejemplo (for)
 
 ```javascript
@@ -267,11 +301,17 @@ Valor de n :28
 Valor de n :36
 */
 ```
+<div id='condicionales'></div>
+
 ## Condicionales
+
+<div id='ifElse'></div>
 
 ### if else
 
 Ejecuta una sentencia si una condición específicada es evaluada como verdadera. Si la condición es evaluada como falsa, otra sentencia puede ser ejecutada.
+
+<div id='sintaxisIfElse'></div>
 
 #### Sintaxis if else
 
@@ -290,6 +330,8 @@ if (condición) sentencia1 [else sentencia2]
 - **sentencia2**
 
     Sentencia que se ejecutará si condición se evalúa como falsa, y exista una cláusula else. Puede ser cualquier sentencia, incluyendo sentencias block y otras sentencias if anidadas.
+
+<div id='ejemploIfElse'></div>
 
 #### Ejemplo (if else)
 
@@ -319,9 +361,13 @@ if( edad < 18 ) {
 }
 ```
 
+<div id='switch'></div>
+
 ### switch
 
 La declaración switch evalúa una expresión, comparando el valor de esa expresión con una instancia case, y ejecuta declaraciones asociadas a ese case, así como las declaraciones en los case que siguen.
+
+<div id='sintaxisSwitch'></div>
 
 #### Sintaxis switch
 
@@ -355,6 +401,8 @@ switch (expresión) {
 
     Una instancia default, cuando es declarada, es ejecutada si el valor de la expresión no coincide con cualquiera de las otras instancias case valorN.
 
+<div id='ejemploSwitch'></div>
+
 #### Ejemplo (switch)
 
 ```javascript
@@ -386,6 +434,8 @@ El kilogramo de naranjas cuesta $0.59.
 */
 ```
 
+<div id='operadoresDeAsignacion'></div>
+
 ## Operadores de asignación
 
 Un operador de asignación asigna un valor a su operando izquierdo basándose en el valor de su operando derecho. El operador de asignación simple es igual (=), que asigna el valor de su operando derecho a su operando izquierdo. Es decir, x = y asigna el valor de y a x.
@@ -411,6 +461,8 @@ También hay operadores de asignación compuestos que son una abreviatura de las
 | Asignación OR lógico | x ||= y | x || (x = y) |
 | Asignación de anulación lógica | 	x ??= y | x ?? (x = y) |
 
+<div id='operadoresDeComparacion'></div>
+
 ## Operadores de comparación
 
 Un operador de comparación compara sus operandos y devuelve un valor lógico en función de si la comparación es verdadera (true) o falsa (false). Los operandos pueden ser valores numéricos, de cadena, lógicos u objetos. Las cadenas se comparan según el orden lexicográfico estándar, utilizando valores Unicode. En la mayoría de los casos, si los dos operandos no son del mismo tipo, JavaScript intenta convertirlos a un tipo apropiado para la comparación. Este comportamiento generalmente resulta en comparar los operandos numéricamente. Las únicas excepciones a la conversión de tipos dentro de las comparaciones involucran a los operadores === y !==, que realizan comparaciones estrictas de igualdad y desigualdad. Estos operadores no intentan convertir los operandos a tipos compatibles antes de verificar la igualdad. La siguiente tabla describe los operadores de comparación en términos de este código de ejemplo:
@@ -431,11 +483,17 @@ var var2 = 4;
 | Menor que (<) | Devuelve true si el operando izquierdo es menor que el operando derecho. | var1 < var2<br>"2" < 12 |
 | Menor o igual (<=) | Devuelve true si el operando izquierdo es menor o igual que el operando derecho. | var1 <= var2<br>var2 <= 5 |
 
+<div id='funciones'></div>
+
 ## Funciones
+
+<div id='functionn'></div>
 
 ### function*
 
 La declaración function* (la palabra clave function seguida de un asterisco) define una función generadora, que devuelve un objeto Generator.
+
+<div id='sintaxisFunctionn'></div>
 
 #### Sintaxis function*
 
@@ -456,6 +514,8 @@ function* nombre([param[, param[, ... param]]]) {
 - **instrucciones**
 
     Las instrucciones que componen el cuerpo de la función.
+
+<div id='ejemploFunctionn'></div>
 
 #### Ejemplo (function*)
 
@@ -496,11 +556,15 @@ console.log(gen.next().value); // 13
 console.log(gen.next().value); // 20
 ```
 
+<div id='functiona'></div>
+
 ### function
 
 Declara una función con los parámetros especificados.
 
 Puede también definir funciones usando el constructor Function y el function (expresión function).
+
+<div id='sintaxisFunction'></div>
 
 #### Sintaxis function
 
@@ -520,6 +584,8 @@ function nombre([parametro1] [,parametro2] [..., parametroN]) {sentencias}
 
   Las sentencias que comprenden el cuerpo de la función.
 
+<div id='ejemploFunction'></div>
+
 #### Ejemplo (function)
 
 ```javascript
@@ -533,6 +599,8 @@ Salida
 */
 ```
 
+<div id='funcionesFlecha'></div>
+
 ### Funciones Flecha
 
 Una expresión de función flecha es una alternativa compacta a una expresión de función tradicional, pero es limitada y no se puede utilizar en todas las situaciones.
@@ -545,11 +613,15 @@ Diferencias y limitaciones:
 - No se puede utilizar como constructor.
 - No se puede utilizar yield dentro de su cuerpo.
 
+<div id='sintaxisFuncionesFlecha'></div>
+
 #### Sintaxis Funciones Flecha
 
 ```text
 param => expression
 ```
+
+<div id='ejemploFuncionesFlecha'></div>
 
 #### Ejemplo (Funciones Flecha)
 
@@ -563,6 +635,8 @@ Salida
 28210
 */
 ```
+
+<div id='ejemploDeLoAprendido'></div>
 
 # Ejemplo de lo aprendido
 
