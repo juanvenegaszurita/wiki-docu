@@ -2,4 +2,4 @@
 
 # Indice
 
-- [Javascript](http://wiki.wede.cl/javascript/index.md)
+- [Javascript](http://wiki.wede.cl/javascript/index.html)
